@@ -1,8 +1,9 @@
+# NOTE: for versions 19+ for Python 3.3+ see python3-pycountry.spec
 #
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-pycountry.spec)
 
 Summary:	ISO country, subdivision, language, currency and script definitions and their translations
 Summary(pl.UTF-8):	Definicje ISO dla krajów, podziału, języków, walut i pisma wraz z tłumaczeniami
